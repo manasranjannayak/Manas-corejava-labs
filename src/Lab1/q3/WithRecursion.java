@@ -1,0 +1,21 @@
+package Lab1.q3;
+import java.util.*;
+
+public class WithRecursion {
+	
+	static int fib(int n) {
+		if(n<=1)
+			return n;
+		return fib(n-1)+fib(n-2);
+	}
+	
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of nth fibonacci :");
+		int n=sc.nextInt();
+		
+		System.out.println(fib(n));
+	}
+
+}
